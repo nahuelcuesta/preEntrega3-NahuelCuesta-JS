@@ -17,13 +17,22 @@ header {
     }
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .contenedor-h1 {
     height: 100vh;
     width: 100%;
-    background-image: url(../assets/estudio.png);
+    // 
+    background-color: whitesmoke;
     background-repeat: round;
     object-fit: cover;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
@@ -32,18 +41,50 @@ header {
         text-align: center;
         color: rgb(255, 235, 119);
         // background-color: whitesmoke;
-        padding: 10px;
+        padding: 20px;
         text-shadow: 2px 2px rgb(0, 0, 0);
         width: 100%;
+    }
+
+    fieldset {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        legend {
+            font-size: 50px;
+            text-align: center;
+            color: rgb(0, 0, 0);
+            // background-color: whitesmoke;
+            padding: 10px;
+            text-shadow: 2px 2px rgb(255, 235, 119);
+            width: 100%;
+        }
+    }
+    input[type=checkbox]{
+        transform: scale(2);
+   
+    }
+    .contenedor-inputs{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        label{
+            font-size: 30px;
+            padding-left: 20px;
+        }
     }
 }
 
 .contenedor-banners {
     margin-top: 10px;
-    width: 100%;
+    width: 50%;
     background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
     gap: 10px;
 }
 
@@ -61,6 +102,7 @@ header {
     text-shadow: 2px 2px black;
     text-decoration: none;
 }
+
 .banner-actrices {
     display: flex;
     justify-content: center;
@@ -75,6 +117,7 @@ header {
     text-shadow: 2px 2px black;
     text-decoration: none;
 }
+
 .banner-promotoras {
     display: flex;
     justify-content: center;
@@ -89,6 +132,7 @@ header {
     text-shadow: 2px 2px black;
     text-decoration: none;
 }
+
 .banner-promotores {
     display: flex;
     justify-content: center;

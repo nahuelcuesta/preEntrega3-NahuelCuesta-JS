@@ -8,23 +8,45 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-   <script src="./main.js" defer></script>
+    <script src="./main.js" defer></script>
 </head>
 
 <body>
     <header>
-       <img src="./assets/logo-camara-8-bit.png" alt="Logo de camara en 8 bit">
+        <img src="./assets/logo-camara-8-bit.png" alt="Logo de camara en 8 bit">
     </header>
     <main>
         <section class="contenedor-h1">
-            <h1>CLUB IMAGEN</h1>
+            <h1>TALENTO IMAGEN</h1>
+            <fieldset>
+                <legend>Encuentra a tu talento</legend>
+                <div class="contenedor-inputs">
+                    <div>
+                        <input type="checkbox" id="actriz" name="actriz" checked>
+                        <label for="actriz">ACTRIZ</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="actor" name="actor">
+                        <label for="actor">ACTOR</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="promotora" name="promotora">
+                        <label for="promotora">PROMOTORA</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="promotor" name="promotor">
+                        <label for="promotor">PROMOTOR</label>
+                    </div>
+                </div>
+            </fieldset>
         </section>
         <section class="contenedor-banners">
             <a class="banner-actores" href="./pages/actores.html">ACTORES</a>
             <a class="banner-actrices" href="">ACTRICES</a>
             <a class="banner-promotoras" href="">PROMOTORAS</a>
             <a class="banner-promotores" href="">PROMOTORES</a>
-            
+
         </section>
     </main>
 
