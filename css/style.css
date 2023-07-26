@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+}
+
+header {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+  height: 10vh;
+  filter: grayscale(100%);
+}
+header img {
+  height: 90%;
+}
+
+.contenedor-h1 {
+  height: 100vh;
+  width: 100%;
+  background-image: url(../assets/estudio.png);
+  background-repeat: round;
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contenedor-h1 h1 {
+  font-size: 80px;
+  text-align: center;
+  color: rgb(255, 235, 119);
+  padding: 10px;
+  text-shadow: 2px 2px rgb(0, 0, 0);
+  width: 100%;
+}
+
+.contenedor-banners {
+  margin-top: 10px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.banner-actores {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 100%;
+  background-image: url(../assets/banner-actores.webp);
+  object-fit: contain;
+  background-position: 0% 25%;
+  font-size: 45px;
+  color: rgb(255, 235, 119);
+  text-shadow: 2px 2px black;
+  text-decoration: none;
+}
+
+.banner-actrices {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 100%;
+  background-image: url(../assets/banner-actrices.jpg);
+  object-fit: contain;
+  background-position: 0% 25%;
+  font-size: 45px;
+  color: rgb(255, 235, 119);
+  text-shadow: 2px 2px black;
+  text-decoration: none;
+}
+
+.banner-promotoras {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 100%;
+  background-image: url(../assets/banner-promotoras.jpg);
+  object-fit: contain;
+  background-position: 0% 25%;
+  font-size: 45px;
+  color: rgb(255, 235, 119);
+  text-shadow: 2px 2px black;
+  text-decoration: none;
+}
+
+.banner-promotores {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 100%;
+  background-image: url(../assets/banner-promotores.png);
+  object-fit: contain;
+  background-position: 0% 25%;
+  font-size: 45px;
+  color: rgb(255, 235, 119);
+  text-shadow: 2px 2px black;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style.css.map */
