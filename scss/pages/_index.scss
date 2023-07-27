@@ -6,16 +6,24 @@ body {
 header {
     background-color: rgb(255, 255, 255);
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    padding: 2px;
+    padding: 2px 30px;
     height: 10vh;
     filter: grayscale(100%);
 
-    img {
-        height: 90%;
+    a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        font-size: 1.5rem;
+            height: 90%;
+            img{
+                height: 100%;
+            }
     }
 }
+
 
 main {
     display: flex;
@@ -25,7 +33,7 @@ main {
 }
 
 .contenedor-h1 {
-    height: 100vh;
+    height: 90vh;
     width: 100%;
     // 
     background-color: whitesmoke;
@@ -35,9 +43,8 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    h1 {
-        font-size: 80px;
+     h1 {
+        font-size: 60px;
         text-align: center;
         color: rgb(255, 235, 119);
         // background-color: whitesmoke;
@@ -51,99 +58,32 @@ main {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        border-color: transparent;
+
         legend {
-            font-size: 50px;
+            font-size: 35px;
             text-align: center;
             color: rgb(0, 0, 0);
-            // background-color: whitesmoke;
             padding: 10px;
             text-shadow: 2px 2px rgb(255, 235, 119);
             width: 100%;
         }
     }
-    input[type=checkbox]{
-        transform: scale(2);
-   
+    input {
+        accent-color: rgb(225, 78, 78);
     }
-    .contenedor-inputs{
+    input[type=checkbox] {
+        transform: scale(2);
+    }
+    .contenedor-inputs {
         display: flex;
         flex-direction: column;
         align-items: start;
-        label{
+        margin-top: 30px;
+
+        label {
             font-size: 30px;
             padding-left: 20px;
         }
     }
-}
-
-.contenedor-banners {
-    margin-top: 10px;
-    width: 50%;
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    gap: 10px;
-}
-
-.banner-actores {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 200px;
-    width: 100%;
-    background-image: url(../assets/banner-actores.webp);
-    object-fit: contain;
-    background-position: 0% 25%;
-    font-size: 45px;
-    color: rgb(255, 235, 119);
-    text-shadow: 2px 2px black;
-    text-decoration: none;
-}
-
-.banner-actrices {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 200px;
-    width: 100%;
-    background-image: url(../assets/banner-actrices.jpg);
-    object-fit: contain;
-    background-position: 0% 25%;
-    font-size: 45px;
-    color: rgb(255, 235, 119);
-    text-shadow: 2px 2px black;
-    text-decoration: none;
-}
-
-.banner-promotoras {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 200px;
-    width: 100%;
-    background-image: url(../assets/banner-promotoras.jpg);
-    object-fit: contain;
-    background-position: 0% 25%;
-    font-size: 45px;
-    color: rgb(255, 235, 119);
-    text-shadow: 2px 2px black;
-    text-decoration: none;
-}
-
-.banner-promotores {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 200px;
-    width: 100%;
-    background-image: url(../assets/banner-promotores.png);
-    object-fit: contain;
-    background-position: 0% 25%;
-    font-size: 45px;
-    color: rgb(255, 235, 119);
-    text-shadow: 2px 2px black;
-    text-decoration: none;
 }

@@ -11,14 +11,21 @@ body {
 header {
   background-color: rgb(255, 255, 255);
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  padding: 2px;
+  padding: 2px 30px;
   height: 10vh;
   filter: grayscale(100%);
 }
-header img {
+header a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 1.5rem;
   height: 90%;
+}
+header a img {
+  height: 100%;
 }
 
 main {
@@ -29,7 +36,7 @@ main {
 }
 
 .contenedor-h1 {
-  height: 100vh;
+  height: 90vh;
   width: 100%;
   background-color: whitesmoke;
   background-repeat: round;
@@ -40,7 +47,7 @@ main {
   align-items: center;
 }
 .contenedor-h1 h1 {
-  font-size: 80px;
+  font-size: 60px;
   text-align: center;
   color: rgb(255, 235, 119);
   padding: 20px;
@@ -52,14 +59,18 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-color: transparent;
 }
 .contenedor-h1 fieldset legend {
-  font-size: 50px;
+  font-size: 35px;
   text-align: center;
   color: rgb(0, 0, 0);
   padding: 10px;
   text-shadow: 2px 2px rgb(255, 235, 119);
   width: 100%;
+}
+.contenedor-h1 input {
+  accent-color: rgb(225, 78, 78);
 }
 .contenedor-h1 input[type=checkbox] {
   transform: scale(2);
@@ -68,103 +79,86 @@ main {
   display: flex;
   flex-direction: column;
   align-items: start;
+  margin-top: 30px;
 }
 .contenedor-h1 .contenedor-inputs label {
   font-size: 30px;
   padding-left: 20px;
 }
 
-.contenedor-banners {
-  margin-top: 10px;
-  width: 50%;
-  background-color: rgb(255, 255, 255);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
+body {
+  background-color: rgb(55, 53, 53);
+}
+body h1 {
+  font-size: 50px;
+  text-align: center;
+  color: rgb(255, 235, 119);
+  background-color: whitesmoke;
+  padding: 5px;
+  text-shadow: 2px 2px rgb(0, 0, 0);
+  width: 100%;
 }
 
-.banner-actores {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 200px;
-  width: 100%;
-  background-image: url(../assets/banner-actores.webp);
-  object-fit: contain;
-  background-position: 0% 25%;
-  font-size: 45px;
-  color: rgb(255, 235, 119);
-  text-shadow: 2px 2px black;
-  text-decoration: none;
-}
-
-.banner-actrices {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 200px;
-  width: 100%;
-  background-image: url(../assets/banner-actrices.jpg);
-  object-fit: contain;
-  background-position: 0% 25%;
-  font-size: 45px;
-  color: rgb(255, 235, 119);
-  text-shadow: 2px 2px black;
-  text-decoration: none;
-}
-
-.banner-promotoras {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 200px;
-  width: 100%;
-  background-image: url(../assets/banner-promotoras.jpg);
-  object-fit: contain;
-  background-position: 0% 25%;
-  font-size: 45px;
-  color: rgb(255, 235, 119);
-  text-shadow: 2px 2px black;
-  text-decoration: none;
-}
-
-.banner-promotores {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 200px;
-  width: 100%;
-  background-image: url(../assets/banner-promotores.png);
-  object-fit: contain;
-  background-position: 0% 25%;
-  font-size: 45px;
-  color: rgb(255, 235, 119);
-  text-shadow: 2px 2px black;
-  text-decoration: none;
+.titulo-talentos {
+  margin-top: 20px;
 }
 
 .contenedor-talentos {
+  width: 90%;
   display: flex;
   flex-wrap: wrap;
+  flex: auto;
   justify-content: space-evenly;
   align-items: center;
-  row-gap: 10px;
+  row-gap: 30px;
   column-gap: 10px;
+  margin: 20px;
+  font-size: 26px;
 }
 
 .contenedor-talento {
-  width: 30%;
-  height: 40%;
+  width: 300px;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 2px;
+  padding: 5px;
   align-items: center;
   object-fit: contain;
+  background-color: whitesmoke;
+  border-radius: 20px;
 }
 .contenedor-talento img {
   width: 90%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+  filter: grayscale(100%);
+}
+.contenedor-talento img:hover {
+  border-radius: 0%;
+  filter: grayscale(0%);
+}
+.contenedor-talento button {
+  width: 90%;
+  padding: 5px;
+  margin: 10px;
+  font-size: 1.2rem;
+  background-color: rgb(52, 52, 52);
+  border-radius: 10px;
+}
+.contenedor-talento button:hover {
+  background-color: rgb(255, 235, 119);
+  color: whitesmoke;
+}
+.contenedor-talento button a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+.contenedor-talento button a:hover {
+  color: rgb(0, 0, 0);
 }
 
 /*# sourceMappingURL=style.css.map */
