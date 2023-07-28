@@ -49,41 +49,25 @@ main {
 .contenedor-h1 h1 {
   font-size: 60px;
   text-align: center;
-  color: rgb(255, 235, 119);
+  color: rgb(0, 0, 0);
   padding: 20px;
-  text-shadow: 2px 2px rgb(0, 0, 0);
   width: 100%;
 }
-.contenedor-h1 fieldset {
+
+.contenedor-btn {
+  width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-color: transparent;
-}
-.contenedor-h1 fieldset legend {
-  font-size: 35px;
-  text-align: center;
-  color: rgb(0, 0, 0);
-  padding: 10px;
-  text-shadow: 2px 2px rgb(255, 235, 119);
-  width: 100%;
-}
-.contenedor-h1 input {
-  accent-color: rgb(225, 78, 78);
-}
-.contenedor-h1 input[type=checkbox] {
-  transform: scale(2);
-}
-.contenedor-h1 .contenedor-inputs {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
+  row-gap: 20px;
   margin-top: 30px;
 }
-.contenedor-h1 .contenedor-inputs label {
-  font-size: 30px;
-  padding-left: 20px;
+
+.clase-boton {
+  width: 100%;
+  padding: 5px;
+  background-color: rgb(240, 94, 94);
 }
 
 body {
@@ -92,10 +76,9 @@ body {
 body h1 {
   font-size: 50px;
   text-align: center;
-  color: rgb(255, 235, 119);
-  background-color: whitesmoke;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 235, 119);
   padding: 5px;
-  text-shadow: 2px 2px rgb(0, 0, 0);
   width: 100%;
 }
 
@@ -141,24 +124,18 @@ body h1 {
   border-radius: 0%;
   filter: grayscale(0%);
 }
-.contenedor-talento button {
-  width: 90%;
-  padding: 5px;
-  margin: 10px;
-  font-size: 1.2rem;
-  background-color: rgb(52, 52, 52);
-  border-radius: 10px;
-}
-.contenedor-talento button:hover {
-  background-color: rgb(255, 235, 119);
-  color: whitesmoke;
-}
-.contenedor-talento button a {
+.contenedor-talento a {
   text-decoration: none;
-  color: whitesmoke;
+  background-color: rgb(255, 235, 119);
+  color: black;
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin: 10px 0px;
 }
-.contenedor-talento button a:hover {
+.contenedor-talento a:hover {
   color: rgb(0, 0, 0);
+  background-color: rgb(255, 119, 119);
+  scale: 1.1;
 }
 
 /*# sourceMappingURL=style.css.map */
