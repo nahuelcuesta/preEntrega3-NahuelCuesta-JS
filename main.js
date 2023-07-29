@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     botonActriz.addEventListener("click", function () {
+
         filtrarTalentos("actriz");
     });
 
