@@ -6,137 +6,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TALENTO CASTING</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="./carritoTalentos.js" defer></script>
     <script src="./main.js" defer></script>
+    <script src="./baseTalentos.js" defer> </script>
+
 </head>
 
 <body>
     <header>
-        <a href="./index.html"><img class="logo-imagen" src="./assets/logo-camara-8-bit.png"
-                alt="Logo de camara en 8 bit"></a>
+        <nav>
+            <a href="./index.html">
+                <p>TALENTO <br> CASTING</p>
+            </a>
+            <button id=carroTalentosBtn>SELECCION</button>
+        </nav>
+        <div id=contenedorCarritoTalentos class="contenedor-carrito-talentos">
+            <div>
+                <p>SELECCION</p>
+                <button>X</button>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Imagen</th>
+                        <th>Nombre</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th><img src="./assets/talentos/talento1.jpg" alt=""></th>
+                        <th>JUAN SOLIS</th>
+                    </tr>
+        
+                    <tr>
+                        <th><img src="./assets/talentos/talento1.jpg" alt=""></th>
+                        <th>JUAN SOLIS</th>
+                    </tr>
+
+                    <tr>
+                        <th><img src="./assets/talentos/talento1.jpg" alt=""></th>
+                        <th>JUAN SOLIS</th>
+                    </tr>
+                    <tr>
+                        <th><img src="./assets/talentos/talento1.jpg" alt=""></th>
+                        <th>JUAN SOLIS</th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
     </header>
     <main>
         <section class="contenedor-h1">
             <h1>TALENTO CASTING</h1>
             <h2>Encuentra a tu talento</h2>
-
             <div class="contenedor-btn">
-                <button id = boton-actriz class="clase-boton" >ACTRIZ</button>
-                <button id = boton-actor class="clase-boton" >ACTOR</button>
-                <button id = boton-promotor class="clase-boton" >PROMOTOR</button>
-                <button id = boton-promotora class="clase-boton" >PROMOTORA</button>
+                <button id=boton-actriz class="clase-boton">ACTRIZ</button>
+                <button id=boton-actor class="clase-boton">ACTOR</button>
+                <button id=boton-promotor class="clase-boton">PROMOTOR</button>
+                <button id=boton-promotora class="clase-boton">PROMOTORA</button>
             </div>
         </section>
-        <section id = "lista-talentos" class="contenedor-talentos">
-            <div class="contenedor-talento">
-                <img src="./assets/talentos/talento1.jpg" alt="">
-                <p class="nombre-datos">JUAN SOLIS</p>
-                <p>Actor</p>
-                <p>Altura: <span>1,70</span></p>
-                <p>Hombre</p>
-                <p>Buenos Aires</p>
-                <a href="#" class="contratar-talento" data-id="1">SOLICITAR CASTING</a>
-            </div>
-            <div class="contenedor-talento">
-                <img src="./assets/talentos/talento2.jpg" alt="">
-                <p>ESTEBAN RIMO</p>
-                <p>Actor, Musico</p>
-                <p>Altura: <span>1,92</span></p>
-                <p>Hombre</p>
-                <p>Buenos Aires</p>
-               <a href="#" class="contratar-talento" data-id="1">SOLICITAR CASTING</a>
-            </div>
-            <div class="contenedor-talento">
-                <img src="./assets/talentos/talento3.jpg" alt="">
-                <p>JULIA SEGANCHA</p>
-                <p>Actriz, Clown</p>
-                <p>Altura: <span>1,85</span></p>
-                <p>Mujer</p>
-                <p>Rosario</p>
-                <a href="#" class="contratar-talento" data-id="1">SOLICITAR CASTING</a>
-            </div>
-            <div class="contenedor-talento">
-                <img src="./assets/talentos/talento4.jpg" alt="">
-                <p>DIMITRI CORSA</p>
-                <p>Actor, Bailarin, Promotor</p>
-                <p>Altura: <span>1,68</span></p>
-                <p>Hombre</p>
-                <p>Cordoba</p>
-                <a href="#" class="contratar-talento" data-id="1">SOLICITAR CASTING</a>
-            </div>
-            <div class="contenedor-talento">
-                <img src="./assets/talentos/talento5.png" alt="">
-                <p>ANDREA DEMODO</p>
-                <p>Actriz, Promotora</p>
-                <p>Altura: <span>1,73</span></p>
-                <p>Mujer</p>
-                <p>Buenos Aires</p>
-                <a href="#" class="contratar-talento" data-id="1">SOLICITAR CASTINGo</a>
-            </div>
-            <div class="contenedor-talento">
-                <img src="./assets/talentos/talento6.jpg" alt="">
-                <p>JOSEFINO KUL</p>
-                <p>Actor, Mimo</p>
-                <p>Altura: <span>1,89</span></p>
-                <p>Hombre</p>
-                <p>Rosario</p>
-                <a href="#" class="contratar-talento" data-id="1">SOLICITAR CASTING</a>
-            </div>
-            <div class="contenedor-talento">
-                <img src="./assets/talentos/talento7.jpg" alt="">
-                <p>SOFIA BERA</p>
-                <p>Promotora</p>
-                <p>Altura: <span>1,78</span></p>
-                <p>Mujer</p>
-                <p>Rosario</p>
-                <a href="#" class="contratar-talento" data-id="1">SOLICITAR CASTING</a>
-            </div>
-            <div class="contenedor-talento">
-                <img src="./assets/talentos/talento8.jpg" alt="">
-                <p>SUSANA LOZA</p>
-                <p>Actriz, Promotora</p>
-                <p>Altura: <span>1,64</span></p>
-                <p>Mujer</p>
-                <p>Buenos Aires</p>
-                <a href="#" class="contratar-talento" data-id="1">SOLICITAR CASTING</a>
-            </div>
-            <div class="contenedor-talento">
-                <img src="./assets/talentos/talento9.jpg" alt="">
-                <p>RODRIGO LASARNA</p>
-                <p>Actor, Mimo</p>
-                <p>Altura: <span>1,74</span></p>
-                <p>Hombre</p>
-                <p>Cordoba</p>
-                <a href="#" class="contratar-talento" data-id="1">SOLICITAR CASTING</a>
-            </div>
-            <div class="contenedor-talento">
-                <img src="./assets/talentos/talento10.jpg" alt="">
-                <p>GUILLERMINA DAS</p>
-                <p>Actriz, Promotora</p>
-                <p>Altura: <span>1,79</span></p>
-                <p>Mujer</p>
-                <p>Rosario</p>
-                <a href="#" class="contratar-talento" data-id="1">SOLICITAR CASTING</a>
-            </div>
-            <div class="contenedor-talento">
-                <img src="./assets/talentos/talento11.jpg" alt="">
-                <p>LUCAS ARTO</p>
-                <p>Actor, Promotor</p>
-                <p>Altura: <span>1,63</span></p>
-                <p>Hombre</p>
-                <p>Buenos Aires</p>
-                <a href="#" class="contratar-talento" data-id="1">SOLICITAR CASTING</a>
-            </div>
-            <div class="contenedor-talento">
-                <img src="./assets/talentos/talento12.jpg" alt="">
-                <p>CAMILA HILO</p>
-                <p>Actriz</p>
-                <p>Altura: <span>1,85</span></p>
-                <p>Mujer</p>
-                <p>Rosario</p>
-                <a href="#" class="contratar-talento" data-id="1">SOLICITAR CASTING</a>
-            </div>
-        </section>
-
+        <section id="lista-talentos" class="contenedor-talentos"></section>
     </main>
 
 </body>
