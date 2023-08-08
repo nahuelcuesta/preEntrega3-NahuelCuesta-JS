@@ -105,15 +105,15 @@ header {
             padding: 5px;
             font-family: 'Faster One', cursive;
         }
-        button{
-            background-color: black;
-            color: rgb(255, 224, 45);
-            aspect-ratio: 1/1;
-            width: 20px;
-            border-radius: 5px;
-        }
     }
 
+    .btn-X{
+        background-color: black;
+        color: rgb(255, 224, 45);
+        aspect-ratio: 1/1;
+        width: 20px;
+        border-radius: 5px;
+    }
     table {
         background-color: rgb(26, 26, 26);
         width: 100%;
@@ -164,7 +164,7 @@ header {
                 border: 1px solid black;
 
 
-                th {
+                td {
                     width: 100%;
                     padding: 5px;
 

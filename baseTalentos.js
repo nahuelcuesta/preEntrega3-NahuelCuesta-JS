@@ -16,17 +16,21 @@ const talentos = [
     
 ]
 
+let contadorID = 1;
+
 for(const talento of talentos ){
-    const contenedor = document.createElement ("div");
-    contenedor.className = "contenedor-talento";
-    contenedor.innerHTML = `
-        <img src="${talento.imagen}" alt="${talento.altImagen}">
-        <p class="nombre-datos"> ${(talento.nombre).toUpperCase() }</p>
-        <p>${talento.profesion}</p>
-        <p>Altura: <span>${talento.altura}</span></p>
-        <p>${talento.genero}</p>
-        <p>${talento.ciudad}</p>
-        <a href="#" class="contratar-talento" data-id="1">SOLICITAR CASTING</a>`;
-    listaTalentos.appendChild(contenedor);
+        const contenedor = document.createElement ("div");
+        contenedor.className = "contenedor-talento";
+        contenedor.innerHTML = `
+            <img src="${talento.imagen}" alt="${talento.altImagen}">
+            <p class="nombre-datos">${(talento.nombre).toUpperCase() }</p>
+            <p>${talento.profesion}</p>
+            <p>Altura: <span>${talento.altura}</span></p>
+            <p>${talento.genero}</p>
+            <p>${talento.ciudad}</p>
+            <a href="#" class="contratar-talento" data-id="${contadorID}">SOLICITAR CASTING</a>`;
+        listaTalentos.appendChild(contenedor);
+        
+        contadorID +=1 ;
 }
 
