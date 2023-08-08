@@ -6,21 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TALENTO CASTING</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="./baseTalentos.js" defer> </script>
+    <script src="./btnCarritoTalentos.js" defer></script>
     <script src="./carritoTalentos.js" defer></script>
     <script src="./main.js" defer></script>
-    <script src="./baseTalentos.js" defer> </script>
+    
 
 </head>
 
 <body>
     <header>
-        <nav>
+        <nav id ="nav-carro-talentos">
             <a href="./index.html">
                 <p>TALENTO <br> CASTING</p>
             </a>
-            <button id=carroTalentosBtn>SELECCION</button>
+            <button id=carro-talentos-btn>SELECCION</button>
         </nav>
-        <div id=contenedorCarritoTalentos class="contenedor-carrito-talentos">
+        <div id=contenedor-carrito-talentos class="contenedor-carrito-talentos">
             <div>
                 <p>SELECCION</p>
                 <button>X</button>
@@ -37,22 +39,9 @@
                         <th><img src="./assets/talentos/talento1.jpg" alt=""></th>
                         <th>JUAN SOLIS</th>
                     </tr>
-        
-                    <tr>
-                        <th><img src="./assets/talentos/talento1.jpg" alt=""></th>
-                        <th>JUAN SOLIS</th>
-                    </tr>
-
-                    <tr>
-                        <th><img src="./assets/talentos/talento1.jpg" alt=""></th>
-                        <th>JUAN SOLIS</th>
-                    </tr>
-                    <tr>
-                        <th><img src="./assets/talentos/talento1.jpg" alt=""></th>
-                        <th>JUAN SOLIS</th>
-                    </tr>
                 </tbody>
             </table>
+            <button id="borrar-lista" class="borrar-lista-btn">Borrar Lista</button>
         </div>
 
     </header>

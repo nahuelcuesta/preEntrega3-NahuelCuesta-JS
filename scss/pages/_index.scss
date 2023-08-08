@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(55, 53, 53);
+    background-color: rgb(26, 26, 26);
     font-family: 'Bebas Neue', sans-serif;
     letter-spacing: 1.5px;
 }
@@ -19,7 +19,7 @@ header {
     height: 7vh;
 
     nav {
-        background-color: rgb(255, 235, 119);
+        background-color: rgb(255, 224, 45);
         display: flex;
         position: fixed;
         bottom: 0;
@@ -27,6 +27,7 @@ header {
         width: 100%;
         justify-content: space-between;
         align-items: center;
+        padding: 0px 10px;
 
         a {
             display: flex;
@@ -59,16 +60,30 @@ header {
         }
     }
 }
+//Estilo para evento click de "btnSeleccion"
+.invertir-color{
+    background-color:rgb(26, 26, 26);
+    a{
+        p{
+            color:rgb(255, 224, 45);
+        }
+    }
+    button{
+        color:rgb(255, 224, 45);
+        background-color:rgb(26, 26, 26);
+        border-color: rgb(255, 224, 45);
+    }
+}
 
 .contenedor-carrito-talentos {
+    display: none;
     width: 95%;
     height: 300px;
     position: fixed;
     bottom: 40px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    background-color: aqua;
-    display: flex;
+    background-color: rgb(50, 50, 50);
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -80,7 +95,7 @@ header {
         border-top-right-radius: 20px;
         justify-content: space-between;
         align-items: center;
-        background-color: gold;
+        background-color: rgb(255, 224, 45);
         padding: 10px;
 
         p {
@@ -90,11 +105,19 @@ header {
             padding: 5px;
             font-family: 'Faster One', cursive;
         }
+        button{
+            background-color: black;
+            color: rgb(255, 224, 45);
+            aspect-ratio: 1/1;
+            width: 20px;
+            border-radius: 5px;
+        }
     }
 
     table {
         background-color: rgb(26, 26, 26);
         width: 100%;
+        height: 300px;
         padding: 5px;
         display: flex;
         flex-direction: column;
@@ -181,7 +204,7 @@ main {
         font-size: 40px;
         text-align: center;
         color: rgb(0, 0, 0);
-        background-color: rgb(255, 235, 119);
+        background-color: rgb(255, 224, 45);
         padding: 20px;
         width: 100%;
         font-family: 'Faster One', cursive;
