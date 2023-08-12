@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const botonActor = document.querySelector("#boton-actor");
     const botonPromotor = document.querySelector("#boton-promotor");
     const botonPromotora = document.querySelector("#boton-promotora");
+    const botonVerTodos = document.querySelector("#boton-ver-todos");
     const contenedorTalentos = document.querySelector("#lista-talentos");
 
     function filtrarTalentos(palabraClave) {
@@ -32,5 +33,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     botonPromotora.addEventListener("click", function () {
         filtrarTalentos("promotora");
+    });
+
+    botonVerTodos.addEventListener("click", function () {
+        contenedorTalentos.querySelectorAll(".contenedor-talento").forEach(function (elemento) {
+            elemento.style.display = "flex";
+        });
     });
 });
