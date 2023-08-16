@@ -8,6 +8,8 @@ window.addEventListener('load', () => {
         talentosSeleccionados = JSON.parse(talentosSeleccionadosLS);
         agregarHTML();
     }
+    const contadorCarrito = document.querySelector('#contador-seleccion');
+    contadorCarrito.textContent = talentosSeleccionados.length;
 });
 
 const borrarLista = document.querySelector('#borrar-lista');
@@ -74,7 +76,8 @@ function agregarHTML() {
         `;
         contenedorTalentos.appendChild(fila);
     })
-
+    const contadorCarrito = document.querySelector('#contador-seleccion');
+    contadorCarrito.textContent = talentosSeleccionados.length;
 }
 
 function borrarTalentos() {
